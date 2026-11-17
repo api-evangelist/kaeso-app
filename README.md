@@ -64,5 +64,130 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Kaeso is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://kaeso.app
+Kaeso is an open-source, self‑hosted AI gateway written in Rust. It implements APIs compatible with OpenAI and Anthropic, offering features such as single sign‑on, usage budgeting, and request logging. Designed for on‑premises deployment, it enables organizations to run large language model interfaces behind their own infrastructure while maintaining control over data and access.
+
+**Areas:** AI · Open-source · Rust · Self-hosted · Gateway · LLM
+
+## Kaeso on APIs.io
+
+Everything profiled for Kaeso is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kaeso-app/](https://apis.io/providers/kaeso-app/)** — or go straight to one of the APIs or properties below.
+
+### APIs (10)
+
+- [Kaeso Agents API](https://apis.io/apis/kaeso-app/kaeso-app-agents-api/) — Agents connected through the MCP server, their rights and policies
+- [Kaeso Auth API](https://apis.io/apis/kaeso-app/kaeso-app-auth-api/) — Sign-in and sessions
+- [Kaeso Instance API](https://apis.io/apis/kaeso-app/kaeso-app-instance-api/) — Instance administration (instance admins only)
+- [Kaeso Logs API](https://apis.io/apis/kaeso-app/kaeso-app-logs-api/) — Request logs, retention and storage
+- [Kaeso Me API](https://apis.io/apis/kaeso-app/kaeso-app-me-api/) — The signed-in user's own account
+- [Kaeso Models API](https://apis.io/apis/kaeso-app/kaeso-app-models-api/) — Model catalogues and aliases
+- [Kaeso Orgs API](https://apis.io/apis/kaeso-app/kaeso-app-orgs-api/) — Organizations
+- [Kaeso Projects API](https://apis.io/apis/kaeso-app/kaeso-app-projects-api/) — Projects
+- [Kaeso Response Cache API](https://apis.io/apis/kaeso-app/kaeso-app-response-cache-api/) — The exact-match response cache: who may use it, how long replies are kept, clearing
+- [Kaeso Stored Responses API](https://apis.io/apis/kaeso-app/kaeso-app-stored-responses-api/) — Responses kept at providers for `previous_response_id`: who may keep them
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Kaeso Agentic Access](https://apis.io/agentic-access/kaeso-app/kaeso-app-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [CredentialCreate](https://apis.io/schemas/kaeso-app/kaeso-app-credential-create/)
+- [CredentialView](https://apis.io/schemas/kaeso-app/kaeso-app-credential-view/)
+- [List_CredentialView](https://apis.io/schemas/kaeso-app/kaeso-app-list-credential-view/)
+- [List_LogView](https://apis.io/schemas/kaeso-app/kaeso-app-list-log-view/)
+- [List_PlaygroundModel](https://apis.io/schemas/kaeso-app/kaeso-app-list-playground-model/)
+- [List_ProviderView](https://apis.io/schemas/kaeso-app/kaeso-app-list-provider-view/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Kaeso App Context](https://apis.io/jsonld/kaeso-app/kaeso-app-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Kaeso API Rules](https://apis.io/rules/kaeso-app/kaeso-app-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kaeso Authentication](https://apis.io/security/kaeso-app/kaeso-app-authentication/)
+- [Kaeso Domain Security](https://apis.io/security/kaeso-app/kaeso-app-domain-security/)
+- [Kaeso Vulnerability Disclosure](https://apis.io/security/kaeso-app/kaeso-app-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://kaeso.app)
+- [Documentation](https://github.com/logicplanes/kaeso)
+- [Changelog](https://kaeso.app/changelog)
+- [Security](https://github.com/logicplanes/kaeso/security/policy)
+- [Privacy policy](https://kaeso.app/datenschutz)
+
+## API Evangelist rating
+
+**Kin Score 42.5** — developing · rubric 0.28.0 · scored 2026-11-16
+
+| Facet | Score |
+|---|---|
+| Discoverability | 76.8 |
+| Contract quality | 59.3 |
+| Contract governance | 79.1 |
+| Operational transparency | 23.8 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 8.5 |
+
+**Agent readiness 35.3** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | partial |
+| Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
+
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kaeso-app/](https://apis.io/providers/kaeso-app/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Kaeso: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kaeso-app/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
